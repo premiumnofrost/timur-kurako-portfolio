@@ -22,6 +22,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}.section-head{display:gr
 h2{font-size:clamp(32px,4vw,54px);line-height:1.05;letter-spacing:-.04em;margin:0}.section-head p{margin:0;color:var(--muted);font-size:18px}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.tile{overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--panel)}
 .tile img{width:100%;height:100%;object-fit:cover}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}
+.tile.full-image{grid-column:1 / -1}.tile.full-image img{display:block;width:100%;height:auto;object-fit:contain}
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.case{padding:26px;border-radius:18px;border:1px solid var(--line);background:var(--panel)}
 .case h3{font-size:22px;margin:0 0 10px;letter-spacing:-.02em}.case p{color:var(--muted);margin:0 0 18px}.case .result{color:var(--text);font-weight:700;font-size:18px}
 .case a{color:var(--accent);text-decoration:none;font-weight:700}.case a:hover{text-decoration:underline}
@@ -70,7 +71,7 @@ footer{padding:52px 0 70px;color:var(--muted);border-top:1px solid var(--line)}
 <div class="grid">
 <div class="tile span4"><img src="assets/garment-front.png" alt="Garment front view"></div>
 <div class="tile span4"><img src="assets/garment-back.png" alt="Garment back view"></div>
-<div class="tile span4"><img src="assets/garment-black.jpg" alt="Black garment study"></div>
+<div class="tile full-image"><img src="assets/garment-black.jpg" alt="Black garment, front and back views"></div>
 <div class="tile span6"><img src="assets/garment-yellow.jpg" alt="Yellow and black garment"></div>
 <div class="tile span6"><img src="assets/garment-workflow.jpg" alt="Garment workflow"></div>
 </div>
