@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timur Kurako | Production Technology & CGI Pipeline</title>
+<meta name="description" content="Timur Kurako — production technology, CGI pipeline, automation, applied AI and realtime 3D portfolio.">
+<style>
+:root{--bg:#0b0d10;--panel:#12161b;--line:#252b33;--text:#f5f7fa;--muted:#9ba7b4;--accent:#ff4a5f;--max:1180px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}
+a{color:inherit} img{max-width:100%;display:block} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#0b0d10e8;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav .wrap{height:68px;display:flex;align-items:center;justify-content:space-between}.name{font-weight:700;letter-spacing:.02em}
+.links{display:flex;gap:22px;font-size:14px;color:var(--muted)}.links a{text-decoration:none}.links a:hover{color:var(--text)}
+.hero{padding:96px 0 72px}.kicker{font-size:13px;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:700}
+h1{font-size:clamp(44px,7vw,88px);line-height:.98;letter-spacing:-.055em;margin:16px 0 28px;max-width:980px}
+.lead{font-size:clamp(19px,2.5vw,28px);color:#c8d0d8;max-width:900px;margin:0}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.badge{border:1px solid var(--line);padding:8px 12px;border-radius:999px;color:#cfd6dd;font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}.metric{padding:26px;border:1px solid var(--line);background:var(--panel);border-radius:18px}
+.metric strong{font-size:34px;display:block;letter-spacing:-.04em}.metric span{color:var(--muted);font-size:14px}
+section{padding:72px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;margin-bottom:36px}
+h2{font-size:clamp(32px,4vw,54px);line-height:1.05;letter-spacing:-.04em;margin:0}.section-head p{margin:0;color:var(--muted);font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.tile{overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--panel)}
+.tile img{width:100%;height:100%;object-fit:cover}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.case{padding:26px;border-radius:18px;border:1px solid var(--line);background:var(--panel)}
+.case h3{font-size:22px;margin:0 0 10px;letter-spacing:-.02em}.case p{color:var(--muted);margin:0 0 18px}.case .result{color:var(--text);font-weight:700;font-size:18px}
+.case a{color:var(--accent);text-decoration:none;font-weight:700}.case a:hover{text-decoration:underline}
+.gallery-note{margin:18px 0 0;color:var(--muted);font-size:13px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.button{display:inline-block;text-decoration:none;border:1px solid var(--line);padding:12px 16px;border-radius:10px;font-weight:700}
+.button.primary{background:var(--accent);border-color:var(--accent);color:white}
+footer{padding:52px 0 70px;color:var(--muted);border-top:1px solid var(--line)}
+.contact{display:flex;justify-content:space-between;gap:24px;align-items:end}.contact h2{color:var(--text);max-width:760px}.contact p{margin:0;text-align:right}
+@media(max-width:800px){.links{display:none}.metrics,.case-grid{grid-template-columns:1fr}.section-head{grid-template-columns:1fr;gap:18px}.span4,.span6,.span8{grid-column:span 12}.contact{display:block}.contact p{text-align:left;margin-top:24px}.hero{padding-top:64px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="name">TIMUR KURAKO</div><div class="links"><a href="#garments">Garments</a><a href="#systems">Systems</a><a href="#realtime">Realtime</a><a href="#contact">Contact</a></div></div></nav>
+<main>
+<div class="hero"><div class="wrap">
+<div class="kicker">Production Technology · CGI Pipeline · Automation</div>
+<h1>Building production systems around CGI, realtime 3D and applied AI.</h1>
+<p class="lead">I design and improve pipelines for teams working across Unreal Engine, DCC tools and large production datasets. My focus is workflow reliability, automation, validation and measurable production impact.</p>
+<div class="badges"><span class="badge">Unreal Engine</span><span class="badge">Python / C++</span><span class="badge">Maya / Blender / Houdini</span><span class="badge">Marvelous Designer / CLO3D</span><span class="badge">Pipeline Automation</span><span class="badge">Applied AI</span></div>
+<div class="metrics">
+<div class="metric"><strong>~60×</strong><span>vehicle packaging workflow improvement</span></div>
+<div class="metric"><strong>20 → 60 FPS</strong><span>after profiling and performance correction</span></div>
+<div class="metric"><strong>~50 specialists</strong><span>production platform rollout in current digital-twin work</span></div>
+</div>
+</div></div>
+<section id="garments"><div class="wrap">
+<div class="section-head"><h2>Garment & character production</h2><p>Hands-on garment work in Marvelous Designer / CLO3D, with realtime preparation, materials, character gear and presentation inside 3D production workflows.</p></div>
+<div class="grid">
+<div class="tile span4"><img src="assets/garment-front.png" alt="Garment front view"></div>
+<div class="tile span4"><img src="assets/garment-back.png" alt="Garment back view"></div>
+<div class="tile span4"><img src="assets/garment-black.jpg" alt="Black garment study"></div>
+<div class="tile span6"><img src="assets/garment-yellow.jpg" alt="Yellow and black garment"></div>
+<div class="tile span6"><img src="assets/garment-workflow.jpg" alt="Garment workflow"></div>
+</div>
+<p class="gallery-note">Selected garment work and workflow examples from earlier production and portfolio material.</p>
+</div></section>
+<section id="systems"><div class="wrap">
+<div class="section-head"><h2>Production systems & automation</h2><p>Selected pipeline work focused on reducing repetitive setup, enforcing standards and making technical workflows easier to operate at team scale.</p></div>
+<div class="case-grid">
+<article class="case"><h3>UE Vehicle Builder</h3><p>Automated conversion of DCC source assets into standardized Unreal Engine vehicle packages, including repeatable setup and validation.</p><div class="result">~60 min → ~1 min</div><p>Packaging time per vehicle workflow.</p><a href="https://www.youtube.com/watch?v=gVWepQuzJlE" target="_blank" rel="noopener">Validation / tooling video ↗</a></article>
+<article class="case"><h3>WorkKit</h3><p>Production platform for centralized tool distribution, updates, source-data preparation, workflow automation and recovery for a digital-twin team.</p><div class="result">~50 specialists</div><p>Current rollout scale.</p></article>
+<article class="case"><h3>Applied AI R&D</h3><p>Evaluation of AI-assisted modeling workflows through geometry quality, defects, manual rework, production readiness and full-cycle effort.</p><div class="result">Human-reviewed rollout</div><p>AI is evaluated as part of the production pipeline, with quality gates and measured constraints.</p></article>
+</div>
+</div></section>
+<section><div class="wrap">
+<div class="section-head"><h2>Character & gear work</h2><p>Realtime character assets, layered clothing and equipment, technical inspection and scene-ready presentation.</p></div>
+<div class="grid">
+<div class="tile span4"><img src="assets/character-front.png" alt="Realtime tactical character front"></div>
+<div class="tile span4"><img src="assets/gear-detail.png" alt="Technical gear detail"></div>
+<div class="tile span4"><img src="assets/character-back.png" alt="Realtime tactical character back"></div>
+</div>
+</div></section>
+<section id="realtime"><div class="wrap">
+<div class="section-head"><h2>Realtime / Unreal Engine</h2><p>Production work includes editor tooling, validation, profiling, realtime presentation and content optimization.</p></div>
+<div class="grid">
+<div class="tile span6"><img src="assets/realtime-scene.png" alt="Realtime character scene"></div>
+<div class="tile span6"><img src="assets/realtime-cinematic.png" alt="Realtime cinematic scene"></div>
+<div class="tile span6"><img src="assets/realtime-character.png" alt="Realtime character presentation"></div>
+<div class="tile span6"><img src="assets/archviz-1.jpg" alt="Realtime architectural visualization"></div>
+</div>
+<div class="case-grid" style="margin-top:16px">
+<article class="case"><h3>UE5 performance recovery</h3><p>Profiled a scene with Unreal Insights / Trace, identified a UI render-target bottleneck and followed with content-budget optimization.</p><div class="result">20 FPS → 60 FPS</div></article>
+<article class="case"><h3>Production standards</h3><p>Defined and enforced requirements around LODs, collision, UVs, materials, folder structure and engine integration.</p><div class="result">Faster review, fewer regressions</div></article>
+<article class="case"><h3>Cross-DCC workflow</h3><p>Current work spans Maya, Blender and Houdini, with tools and process design selected around production needs rather than a single DCC.</p><div class="result">Tool-agnostic pipeline ownership</div></article>
+</div>
+</div></section>
+<section><div class="wrap">
+<div class="section-head"><h2>Realtime visualization</h2><p>Additional visualization work showing material, lighting, composition and realtime presentation experience across different production contexts.</p></div>
+<div class="grid">
+<div class="tile span6"><img src="assets/archviz-1.jpg" alt="Realtime visualization interior one"></div>
+<div class="tile span6"><img src="assets/archviz-2.jpg" alt="Realtime visualization interior two"></div>
+</div>
+<div class="cta">
+<a class="button primary" href="https://www.youtube.com/watch?v=jBiKpjao8mo" target="_blank" rel="noopener">View selected reel ↗</a>
+<a class="button" href="https://youtu.be/deSLkB33uqU" target="_blank" rel="noopener">ArchViz example ↗</a>
+<a class="button" href="https://www.youtube.com/watch?v=gVWepQuzJlE" target="_blank" rel="noopener">Tooling example ↗</a>
+</div>
+</div></section>
+<section><div class="wrap">
+<div class="section-head"><h2>Toolchain</h2><p>Strongest hands-on production experience is in Unreal Engine, Python/C++, Maya, Blender and Houdini. Garment work includes Marvelous Designer / CLO3D. I also work across adjacent DCC and compositing toolchains as production requirements change.</p></div>
+<div class="badges">
+<span class="badge">Unreal Engine 5</span><span class="badge">Python</span><span class="badge">C++</span><span class="badge">PySide / Qt</span>
+<span class="badge">Maya</span><span class="badge">Blender</span><span class="badge">3ds Max</span><span class="badge">Houdini</span>
+<span class="badge">Marvelous Designer</span><span class="badge">CLO3D</span><span class="badge">Substance</span><span class="badge">SQL / PostgreSQL</span>
+<span class="badge">Unreal Insights</span><span class="badge">RenderDoc</span><span class="badge">Jira / Confluence</span>
+</div>
+</div></section>
+</main>
+<footer id="contact"><div class="wrap contact">
+<div><div class="kicker">Contact</div><h2>Production technology, pipeline architecture and technical leadership.</h2></div>
+<p><a href="mailto:premiumnofrost@gmail.com">premiumnofrost@gmail.com</a><br>
+<a href="https://www.linkedin.com/in/timur-kurako/" target="_blank" rel="noopener">LinkedIn</a><br>
+Moscow, Russia · Open to international remote work</p>
+</div></footer>
+</body>
+</html>
