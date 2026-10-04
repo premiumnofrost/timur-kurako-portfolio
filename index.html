@@ -16,10 +16,11 @@ nav{border-bottom:1px solid var(--line)}nav .wrap{min-height:80px;display:flex;a
 .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}.metric strong{font-size:27px;display:block;font-weight:600;letter-spacing:-.02em}.metric span{color:var(--muted);font-size:14px}
 section{padding:64px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;margin-bottom:32px}h2{font-size:clamp(27px,3vw,36px);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin:0}.section-head p{margin:0;color:var(--muted);font-size:17px}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;align-items:start}.tile{overflow:hidden;background:var(--panel)}.tile img{width:100%;height:auto;object-fit:contain}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.tile.full-image{grid-column:1 / -1}.tile.full-image img{display:block;width:100%;height:auto;object-fit:contain}
+.tile.garment-view{background:#333}.tile.garment-view img{height:500px;object-fit:contain}.tile.portrait{background:transparent}.tile.portrait img{max-height:620px;width:auto;margin:auto}.grid.paired-portraits .tile{background:#eeede9}.grid.paired-portraits .span6 img{height:520px;object-fit:contain}
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.case{padding:20px 0 0;border-top:1px solid var(--line)}.case h3{font-size:22px;font-weight:600;margin:0 0 12px;letter-spacing:-.015em}.case p{color:var(--muted);margin:0 0 15px;font-size:15px}.case .result{font-weight:600;font-size:19px;margin:18px 0 5px}.case a{font-size:14px;color:var(--accent)}
 .gallery-note{margin:18px 0 0;color:var(--muted);font-size:13px}.cta{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;text-decoration:underline;text-underline-offset:5px;font-weight:500;font-size:15px;padding:4px 0}.button:hover{color:var(--accent)}
-footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line)}.contact{display:flex;justify-content:space-between;gap:40px;align-items:start}.contact h2{color:var(--text);max-width:650px}.contact p{margin:0;text-align:right}
-@media(max-width:800px){.wrap{width:calc(100% - 36px)}nav .wrap{min-height:66px}.links{display:none}.hero{padding:48px 0}.lead{font-size:18px}.metrics{gap:24px;grid-template-columns:1fr;margin-top:32px}.metric{display:grid;grid-template-columns:150px 1fr;align-items:baseline;gap:16px}.metric strong{font-size:23px}.section-head{grid-template-columns:1fr;gap:18px}.case-grid{grid-template-columns:1fr;gap:24px}section{padding:44px 0}.span4,.span6,.span8{grid-column:span 12}.contact{display:block}.contact p{text-align:left;margin-top:24px}}
+footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line)}.contact{display:flex;justify-content:space-between;gap:40px;align-items:start}.contact h2{color:var(--text);max-width:650px}.contact p{margin:0;text-align:right;max-width:340px}.contact a{overflow-wrap:anywhere}
+@media(max-width:800px){.wrap{width:calc(100% - 36px)}nav .wrap{min-height:66px}.links{display:none}.hero{padding:48px 0}.lead{font-size:18px}.metrics{gap:24px;grid-template-columns:1fr;margin-top:32px}.metric{display:grid;grid-template-columns:150px 1fr;align-items:baseline;gap:16px}.metric strong{font-size:23px}.section-head{grid-template-columns:1fr;gap:18px}.case-grid{grid-template-columns:1fr;gap:24px}section{padding:44px 0}.span4,.span6,.span8{grid-column:span 12}.tile.garment-view img{height:auto}.grid.paired-portraits .span6 img{height:auto}.tile.portrait img{max-height:none;width:100%}.contact{display:block}.contact p{text-align:left;margin-top:24px}}
 </style>
 </head>
 <body>
@@ -58,8 +59,8 @@ footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line)}.
 <section id="evidence"><div class="wrap">
 <div class="section-head"><h2>Production evidence: garments</h2><p>Selected garment work demonstrates practical familiarity with Marvelous Designer / CLO3D, materials and realtime asset workflows, providing production context for the pipelines and systems I design.</p></div>
 <div class="grid">
-<div class="tile span4"><img src="assets/garment-front.png" alt="Garment front view"></div>
-<div class="tile span4"><img src="assets/garment-back.png" alt="Garment back view"></div>
+<div class="tile span6 garment-view"><img src="assets/garment-front.png" alt="Garment front view"></div>
+<div class="tile span6 garment-view"><img src="assets/garment-back.png" alt="Garment back view"></div>
 <div class="tile full-image"><img src="assets/garment-black.jpg" alt="Black garment, front and back views"></div>
 <div class="tile span6"><img src="assets/garment-yellow.jpg" alt="Yellow and black garment"></div>
 <div class="tile span6"><img src="assets/garment-workflow.jpg" alt="Garment workflow"></div>
@@ -68,10 +69,10 @@ footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line)}.
 </div></section>
 <section><div class="wrap">
 <div class="section-head"><h2>Production evidence: characters & gear</h2><p>Character, layered-clothing and equipment work provides context for asset requirements, validation, scene integration and production standards.</p></div>
-<div class="grid">
-<div class="tile span4"><img src="assets/character-front.png" alt="Realtime tactical character front"></div>
+<div class="grid paired-portraits">
+<div class="tile span6"><img src="assets/character-front.png" alt="Realtime tactical character front"></div>
+<div class="tile span6"><img src="assets/character-back.png" alt="Realtime tactical character back"></div>
 <div class="tile full-image"><img src="assets/gear-detail.png" alt="Technical gear detail"></div>
-<div class="tile span4"><img src="assets/character-back.png" alt="Realtime tactical character back"></div>
 </div>
 </div></section>
 <section id="realtime"><div class="wrap">
@@ -79,8 +80,7 @@ footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line)}.
 <div class="grid">
 <div class="tile span6"><img src="assets/realtime-scene.png" alt="Realtime character scene"></div>
 <div class="tile span6"><img src="assets/realtime-cinematic.png" alt="Realtime cinematic scene"></div>
-<div class="tile span6"><img src="assets/realtime-character.png" alt="Realtime character presentation"></div>
-<div class="tile span6"><img src="assets/archviz-1.jpg" alt="Realtime architectural visualization"></div>
+<div class="tile full-image portrait"><img src="assets/realtime-character.png" alt="Realtime character presentation"></div>
 </div>
 <div class="case-grid" style="margin-top:16px">
 <article class="case"><h3>UE5 performance recovery</h3><p>Profiled a scene with Unreal Insights / Trace, identified a UI render-target bottleneck and followed with content-budget optimization.</p><div class="result">20 FPS → 60 FPS</div></article>
@@ -113,7 +113,7 @@ footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line)}.
 <div><div class="kicker">Contact</div><h2>Production technology, pipeline architecture and automation systems.</h2></div>
 <p><a href="mailto:premiumnofrost@gmail.com">premiumnofrost@gmail.com</a><br>
 <a href="https://www.linkedin.com/in/timur-kurako/" target="_blank" rel="noopener">LinkedIn</a><br>
-Moscow, Russia · Open to international remote work</p>
+Open to relocation to Dubai<br>Available for remote work from the UAE</p>
 </div></footer>
 </body>
 </html>
